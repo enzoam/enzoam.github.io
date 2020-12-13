@@ -7,32 +7,42 @@
 <style>
 
     body{
-      /*background-image: url("background.jpg");*/
+      background-image: url("background.png");
       background-position: center;
       background-color:rgb(13, 2, 49);
     }
 
-    .painel{
+    .painel_left{
       padding: 10px;
       margin: 10px;
       float: left;
-      width: 45%;
-      height: 300px; 
+      width: 8%;
+      height: 100px; 
+      background-color:transparent;
+      border-radius: 0px;
+    }	
+
+    .painel_right{
+      padding: 10px;
+      margin: 10px;
+      float: left;
+      width: 85%;
+      height: 100px; 
       background-color:transparent;
       border-radius: 0px;
     }	
 
     .blocks{
-      width: 300px;
+      width: 250px;
       padding: 0px;
       margin: 20px;
       float: left;
-      height: 600px; 
-      box-shadow: 0px 0px 5px 0px #5a5a5a;
+      height: 500px; 
+      /*box-shadow: 0px 0px 5px 0px #5a5a5a;
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
-      background-image: url('backblock.jpg') ;
-      background-color: #424141; /* Used if the image is unavailable */
+      background-image: url('backblock.jpg') ;*/
+      background-color: transparent; /* Used if the image is unavailable */
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size:1500px; /* Resize the background image to cover the entire container */
@@ -41,14 +51,14 @@
     .block-title{
       color:rgb(255, 255, 255);
       text-align: center;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: bold;
     }
 
     .imagem_painel{
-      width:  200px; 
+      width:  100px; 
       height:  auto; 
-      padding: 50px;
+      padding: 10px;
       box-shadow: 0px 0px 5px 0px #5a5a5a;
       border-radius: 50%;
     }	
@@ -65,7 +75,7 @@
 
     .imagem_boxart{
       width:  100%; 
-      height:  65%;
+      height:  auto;
       box-shadow: 0px 0px 5px 0px #5a5a5a;
       border-radius: 10px;
     }	
@@ -88,10 +98,10 @@
 
 <body>
 <article>
-    <div class="painel"><img class='imagem_painel' src="genezgames.jpg"></div>
+    <div class="painel_left"><img class='imagem_painel' src="genezgames.jpg"></div>
 
-    <div class="painel">
-          <div class='block-title' style='font-size: 50px;'><img src="genezgameslogosega.png"><br>Profile : (Enzo)</div>  
+    <div class="painel_right">
+          <div class='block-title' style='font-size: 20px; text-align:right;'><img src="genezgameslogosega.png"><br>1998 - 2016 &#8482 / 2020 &#8482</div>  
     </div>
 
     <div style='height: 200px;'></div>
