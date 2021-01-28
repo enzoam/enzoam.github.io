@@ -16,7 +16,7 @@
 
     .painel_left{
       padding: 10px;
-      margin: 10px;
+      margin: 10px 10px 40px 10px;
       float: left;
       width: 8%;
       height: 100px; 
@@ -26,12 +26,22 @@
 
     .painel_right{
       padding: 10px;
-      margin: 10px;
+      margin: 10px 10px 40px 10px;
       float: left;
       width: 85%;
       height: 100px; 
       background-color:transparent;
       border-radius: 0px;
+    }	
+
+    .block_canal{
+      height: 430px; 
+      padding-left: 30px;
+      float: left;
+      width: 100%; 
+      background-color: transparent; /* Used if the image is unavailable */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
     }	
 
     .blocks{
@@ -89,7 +99,6 @@
       border-radius: 5px;
     }	
 
-
     .div-icone{
       font-size: auto; 
       float: left;
@@ -98,9 +107,18 @@
 
     .div-main-icone{
       font-size: auto; 
-      float: right;
-      margin-left : 10px;
+      float: left;
+      margin-left : 30px;
+      margin-top : 30px;
+      color:rgb(135, 235, 248);
+      text-align: center;
     }
+
+    .icone-grande{
+      width:  64px; 
+      height:  64px; 
+      border-radius: 5px;
+    }	
 
 
 </style>
@@ -111,24 +129,26 @@
 
     <div class="painel_right">
           <div class='block-title' style='font-size: 20px; text-align:right;'><img src="genezgameslogosega.png">
-            <br>1998 - 2016 &#8482 / 2020 &#8482 
-            <div class='div-main-icone'><a href='https://www.scirra.com/store/sellers/enzo-m-622' target="_blank"><img class='icone' src='icons/assetshop.png'></img></a></div>
-            <div class='div-main-icone'><a href='http://ludumdare.com/compo/author/gene-z/' target="_blank"><img class='icone' src='icons/ludumdare.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://globalgamejam.org/users/enzo-march' target="_blank"><img class='icone' src='icons/globalgamejam.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://github.com/enzoam?tab=repositories' target="_blank"><img class='icone' src='icons/github.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.kongregate.com/games/Genezgames' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://genezgames.itch.io/' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.construct.net/en/free-online-games/profile/genezgames-76106' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.facebook.com/genez.gam.75/' target="_blank"><img class='icone' src='icons/facebook.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://twitter.com/genezgames' target="_blank"><img class='icone' src='icons/twitter.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.instagram.com/genezgames_experience' target="_blank"><img class='icone' src='icons/instagram.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.youtube.com/channel/UCPafjHKXNef_4gXmb9XJgaA' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
-            <div class='div-main-icone'><a href='https://www.youtube.com/channel/UCNsmNTjlooeoz3Zbw7Qh6Dg' target="_blank"><img class='icone' src='icons/experience.png'></img></a></div>
-      
+            <br>1998 - 2016 &#8482 / 2021 &#8482 
           </div>  
     </div>
 
-    <div style='height: 200px;'></div>
+    <div class="block_canal">
+      <iframe height="400" width="500" style='border-color: rgba(128, 0, 128, 0.63); border-width: 3px; border-radius: 20px; float: left; margin-right: 20px;' src="https://www.youtube.com/embed/3j1l8Ywm1vo?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <div class='div-main-icone'><a href='https://www.scirra.com/store/sellers/enzo-m-622' target="_blank"><img class='icone-grande' src='icons/assetshop.png'></img></a><br>Assets</div>
+      <div class='div-main-icone'><a href='http://ludumdare.com/compo/author/gene-z/' target="_blank"><img class='icone-grande' src='icons/ludumdare.png'></img></a><br>LudumDare</div>
+      <div class='div-main-icone'><a href='https://globalgamejam.org/users/enzo-march' target="_blank"><img class='icone-grande' src='icons/globalgamejam.png'></img></a><br>GGJam</div>
+      <div class='div-main-icone'><a href='https://github.com/enzoam?tab=repositories' target="_blank"><img class='icone-grande' src='icons/github.png'></img></a><br>GitHub</div>
+      <div class='div-main-icone'><a href='https://www.kongregate.com/games/Genezgames' target="_blank"><img class='icone-grande' src='icons/kongregate.png'></img></a><br>Kongregate</div>
+      <div class='div-main-icone'><a href='https://genezgames.itch.io/' target="_blank"><img class='icone-grande' src='icons/itchio.png'></img></a><br>Itch.IO</div>
+      <div class='div-main-icone'><a href='https://www.construct.net/en/free-online-games/profile/genezgames-76106' target="_blank"><img class='icone-grande' src='icons/scirraarcade.png'></img></a><br>Scirra</div>
+      <div class='div-main-icone'><a href='https://www.facebook.com/genez.gam.75/' target="_blank"><img class='icone-grande' src='icons/facebook.png'></img></a><br>Facebook</div>
+      <div class='div-main-icone'><a href='https://twitter.com/genezgames' target="_blank"><img class='icone-grande' src='icons/twitter.png'></img></a><br>Twitter</div>
+      <div class='div-main-icone'><a href='https://www.instagram.com/genezgames_experience' target="_blank"><img class='icone-grande' src='icons/instagram.png'></img></a><br>Instagram</div>
+      <div class='div-main-icone'><a href='https://www.youtube.com/channel/UCPafjHKXNef_4gXmb9XJgaA' target="_blank"><img class='icone-grande' src='icons/youtube.png'></img></a><br>YouTube</div>
+      <div class='div-main-icone'><a href='https://www.youtube.com/channel/UCNsmNTjlooeoz3Zbw7Qh6Dg' target="_blank"><img class='icone-grande' src='icons/experience.png'></img></a><br>Experience</div>
+    </div>
 
     <div class="blocks" >
       <img class='imagem_boxart' src="projetos/packmanx.png">
