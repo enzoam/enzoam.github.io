@@ -4,6 +4,10 @@
 	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/funcoespagina.js"></script>
+
+
 <!--FILES DONWLOADS www.4shared.com-->
 
 <style>
@@ -133,8 +137,15 @@
           </div>  
     </div>
 
+    <div id='popup' style='position: fixed; top: 250px; margin-left: 23%; margin-right: auto; width: 50%; min-width:600px; height:500px; background-color: rgb(26, 0, 68); z-index:200; border-radius: 20px; border-style: outset; background-image: url("background.png"); display: none;'>
+      <div style='float: right; padding:5px;'><a href='#popup' onclick='function_close_popup();'><img height='25' width='25' src='img/close.png'></img></a></div> 
+      <div id='popupcontent' style='width: 100%;  height: 100%; '>
+
+      </div>
+    </div>
+
     <div class="block_canal">
-      <iframe height="400" width="500" style='border-color: rgba(128, 0, 128, 0.63); border-width: 3px; border-radius: 20px; float: left; margin-right: 20px;' src="https://www.youtube.com/embed/jb9R41kjxnE?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <iframe height="400" width="500" style='border-color: rgba(73, 2, 73, 0.63); border-width: 3px; border-radius: 20px; float: left; margin-right: 20px;' src="https://www.youtube.com/embed/jb9R41kjxnE?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
       <div class='div-main-icone'><a href='https://www.scirra.com/store/sellers/enzo-m-622' target="_blank"><img class='icone-grande' src='icons/assetshop.png'></img></a><br>Assets</div>
       <div class='div-main-icone'><a href='http://ludumdare.com/compo/author/gene-z/' target="_blank"><img class='icone-grande' src='icons/ludumdare.png'></img></a><br>LudumDare</div>
@@ -151,23 +162,18 @@
     </div>
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/receitafederal3dbox.png">
-      <div class='block-title'>Receita Federal 3D</div>
-      <div class='div-icone'><a href='https://genezgames.itch.io/receita-federal-3d' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
-      <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNeFAuczyz85a3r-4iSVXfom' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>          
-      <div class='div-icone'><a href='https://globalgamejam.org/2021/games/pay-get-pray-get-out-7' target="_blank"><img class='icone' src='icons/globalgamejam.png'></img></a></div>
-      <div class='div-icone'><a href='https://github.com/DioMuller/ggj21-package' target="_blank"><img class='icone' src='icons/github.png'></img></a></div>         
+      <a href='#popup' onclick="function_carrega_popup_imgs('receitafederal3dbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/receitafederal3dbox.png"></img></a>
     </div> 
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/packmanx.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('packmanx');" id='loadpopup'><img class='imagem_boxart' src="projetos/packmanx.png"></img></a>
       <div class='block-title'>Pack-Man X</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/pack-man-23017/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a> </div>    
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNdq2j7I5DGvpla48OvCXGu5' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>  
     </div> 
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/spaceblastprocessing.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('spaceblastprocessing');" id='loadpopup'><img class='imagem_boxart' src="projetos/spaceblastprocessing.png"></img></a>
       <div class='block-title'>Space Blast Processing</div>
       <div class='div-icone'><a href='https://www.4shared.com/file/mtLIMVvxiq/space_blast_processing.html' target="_blank"><img class='icone' src='icons/megadriverom.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNeHAykCK3OhLCXYkQHCBMog' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>  
@@ -175,7 +181,7 @@
     </div>   
  
     <div class="blocks" >
-        <img class='imagem_boxart' src="projetos/bricklayerbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('bricklayerbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/bricklayerbox.png"></img></a>
         <div class='block-title'>BrickLayer</div>
         <div class='div-icone'><a href='https://genezgames.itch.io/bricklayer' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
         <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNf-4jj0EQbSmxm3jVAja6nx' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>          
@@ -184,7 +190,7 @@
     </div>    
 
     <div class="blocks">
-      <img class='imagem_boxart' src="projetos/snakepitlarrybox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('snakepitlarrybox');" id='loadpopup'><img class='imagem_boxart' src="projetos/snakepitlarrybox.png"></img></a>
       <div class='block-title'>SnakePit larry</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/snakepit-larry-5845/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a> </div>    
       <div class='div-icone'><a href='https://genezgames.itch.io/snakepitlarry' target="_blank"><img class='icone' src='icons/itchio.png'></img></a> </div>
@@ -194,7 +200,7 @@
     </div>
 
     <div class="blocks" >
-        <img class='imagem_boxart' src="projetos/meudiatododiabox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('meudiatododiabox');" id='loadpopup'><img class='imagem_boxart' src="projetos/meudiatododiabox.png"></img></a>
         <div class='block-title'>Meu dia Todo Dia</div>
         <div class='div-icone'><a href='https://genezgames.itch.io/meu-dia-todo-dia' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
         <div class='div-icone'><a href='https://play.google.com/store/apps/details?id=com.genezteam.meudiatododia&fbclid=IwAR00ZXNugcsckFwx4EgBmJ8u5PxDb2-AWTdlTQfPqwxsPcS--6QSZOWKHmk' target="_blank"><img class='icone' src='icons/playstore.png'></img></a>    </div>
@@ -209,7 +215,7 @@
       </div>
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/superenzoadventureart.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('superenzoadventureart');" id='loadpopup'><img class='imagem_boxart' src="projetos/superenzoadventureart.png"></img></a>
       <div class='block-title'>Super Enzo Adventure</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/super-enzo-adventure-5897/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNfzMABMQ_fSQxhAopCnSsgM' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -218,7 +224,7 @@
     </div>
   
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/retrofactorybox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('retrofactorybox');" id='loadpopup'><img class='imagem_boxart' src="projetos/retrofactorybox.png"></img></a>
       <div class='block-title'>Retro Factory</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/retrofactory' target="_blank"><img class='icone' src='icons/itchio.png'></img></a> </div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/v3KOAcLeea/RetrofactoryWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -227,7 +233,7 @@
     </div>
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/blackholedeepbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('blackholedeepbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/blackholedeepbox.png"></img></a>
       <div class='block-title'>Black Hole Deep</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/black-hole-deep' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/z0u54ijSea/BlackHoleDeepWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -236,7 +242,7 @@
     </div>    
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/freeasabirdbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('freeasabirdbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/freeasabirdbox.png"></img></a>
       <div class='block-title'>Free as a Bird</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/free-as-a-bird' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/0WeDRiYOea/FreeAsaBirdWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -247,7 +253,7 @@
     </div>    
 
     <div class="blocks" >
-      <img class='imagem_boxart ' src="projetos/kingslittlehelperbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('kingslittlehelperbox');" id='loadpopup'><img class='imagem_boxart ' src="projetos/kingslittlehelperbox.png"></img></a>
       <div class='block-title'>Kings Little Helper</div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/CqbLwpKtea/KingsLittleHelperWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNcrq5AvGX1ENRoRBaF1C_TC' target="_blank"><img class='icone' src='icons/youtube.png'></img>   </div>
@@ -255,7 +261,7 @@
     </div>     
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/ritualhero.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('ritualhero');" id='loadpopup'><img class='imagem_bloco' src="projetos/ritualhero.png"></img></a>
       <div class='block-title'>Ritual Hero</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/ritual-hero' target="_blank"><img class='icone' src='icons/itchio.png'></img></a> </div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/F8PFSZcziq/RitualHeroWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -264,7 +270,7 @@
     </div>      
     
     <div class="blocks">
-      <img class='imagem_boxart' src="projetos/sonarbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('sonarbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/sonarbox.png"></img></a>
       <div class='block-title'>Sonar</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/sonar-5995/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/sonar' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -274,7 +280,7 @@
     </div> 
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/azimuth.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('azimuth');" id='loadpopup'><img class='imagem_bloco' src="projetos/azimuth.png"></img></a>
       <div class='block-title'>Azimuth</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/azimuth' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNcJaKed7OmZbjsnNyArEqWD' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -282,7 +288,7 @@
     </div> 
 
     <div class="blocks" >
-      <img class='imagem_boxart' src="projetos/slugcontestbox.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('slugcontestbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/slugcontestbox.png"></img></a>
       <div class='block-title'>Slug Contest</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/slug-contest-5996/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNdmvn4L5Dqh4SOJVyMaGh_k' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -291,7 +297,7 @@
     </div>     
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/rrturbotest.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('rrturbotest');" id='loadpopup'><img class='imagem_bloco' src="projetos/rrturbotest.png"></img></a>
       <div class='block-title'>RR Turbo Test</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/rr-turbo-test-5997/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNfi8RZIts8CQ8nWW55WiYrw' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -299,7 +305,7 @@
     </div>      
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/aedessimulation.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('aedessimulation');" id='loadpopup'><img class='imagem_bloco' src="projetos/aedessimulation.png"></img></a>
       <div class='block-title'>Aedessimulation</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/aedessimulation-5998/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/aedessimulation' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -309,7 +315,7 @@
     </div>  
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/blackholeshit.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('blackholeshit');" id='loadpopup'><img class='imagem_bloco' src="projetos/blackholeshit.png"></img></a>
       <div class='block-title'>Black Hole Shit</div>
       <div class='div-icone'><a href='https://www.4shared.com/mobile/dBYO_i1Tea/BlackHoleShitOuya.html' target="_blank"><img class='icone' src='icons/ouya.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNfa0HC-bj-fXzvui4AcBeCx' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -318,7 +324,7 @@
     </div> 
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/onepop.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('onepop');" id='loadpopup'><img class='imagem_bloco' src="projetos/onepop.png"></img></a>
       <div class='block-title'>One Pop</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/one-pop' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://play.google.com/store/apps/details?id=com.genezteam.onepop' target="_blank"><img class='icone' src='icons/playstore.png'></img></a>    </div>
@@ -329,7 +335,7 @@
     </div> 
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/fallfromouterspace.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('fallfromouterspace');" id='loadpopup'><img class='imagem_bloco' src="projetos/fallfromouterspace.png"></img></a>
       <div class='block-title'>Fall From Outer Space</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/fall-from-outer-space' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/qGR7XSzQiq/FallFromOuterSpaceWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -340,7 +346,7 @@
     </div>  
   
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/parella.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('parella');" id='loadpopup'><img class='imagem_bloco' src="projetos/parella.png"></img></a>
       <div class='block-title'>Paralella</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/parallella-5898/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNdRlOLYdokHYKHp82cpbOIc' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -349,7 +355,7 @@
     </div>   
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/obsidian.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('obsidian');" id='loadpopup'><img class='imagem_bloco' src="projetos/obsidian.png"></img></a>
       <div class='block-title'>Obsidian</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/obsidian-5899/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNeshDT57LkwjzNc7bYOuUXf' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -358,7 +364,7 @@
     </div>   
   
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/nightharvest.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('nightharvest');" id='loadpopup'><img class='imagem_bloco' src="projetos/nightharvest.png"></img></a>
       <div class='block-title'>Night Harvest</div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/nzSIOCdOea/NightHarvestWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNd3neoQz0fOB9UCBCwQkpDU' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -366,7 +372,7 @@
     </div>   
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/wire.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('wire');" id='loadpopup'><img class='imagem_bloco' src="projetos/wire.png"></img></a>
       <div class='block-title'>Wire</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/wire' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNfP5EhQRWgh1wsLeqkzRM1I' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -374,7 +380,7 @@
     </div>
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/alienfury.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('alienfury');" id='loadpopup'><img class='imagem_bloco' src="projetos/alienfury.png"></img></a>
       <div class='block-title'>Alien Fury</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/alien-fury-5900/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/alien-fury' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -384,7 +390,7 @@
     </div>      
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/aftergear.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('aftergear');" id='loadpopup'><img class='imagem_bloco' src="projetos/aftergear.png"></img></a>
       <div class='block-title'>After Gear</div>
       <div class='div-icone'><a href='https://genezgames.itch.io/after-gear' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/after-gear' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -394,7 +400,7 @@
     </div>    
     
    <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/manmadereborn.png">
+    <a href='#popup' onclick="function_carrega_popup_imgs('manmadereborn');" id='loadpopup'><img class='imagem_bloco' src="projetos/manmadereborn.png"></img></a>
       <div class='block-title'>Man Made Reborn</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/man-made-reborn' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/nWLvsoGciq/ManMadeRebornWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
@@ -403,7 +409,7 @@
     </div>  
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/manmade.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('manmade');" id='loadpopup'><img class='imagem_bloco' src="projetos/manmade.png"></img></a>
       <div class='block-title'>Man Made</div>
       <div class='div-icone'><a href='https://www.4shared.com/zip/4GcGL_sxea/ManMadeWin64.html' target="_blank"><img class='icone' src='icons/windowsexe.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNcf7cxyZdiNB6Vu-UY345Cy' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -411,7 +417,7 @@
     </div>    
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/egyptris.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('egyptris');" id='loadpopup'><img class='imagem_bloco' src="projetos/egyptris.png"></img></a>
       <div class='block-title'>Egyptris</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/last-night-earth-5936/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/egyptris' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -421,7 +427,7 @@
     </div>    
  
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/lastnightonearth.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('lastnightonearth');" id='loadpopup'><img class='imagem_bloco' src="projetos/lastnightonearth.png"></img></a>
       <div class='block-title'>Last Night On Earth</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/last-night-earth-5936/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/last-night-on-earth' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -431,7 +437,7 @@
     </div>  
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/carefulsaurus.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('carefulsaurus');" id='loadpopup'><img class='imagem_bloco' src="projetos/carefulsaurus.png"></img></a>
       <div class='block-title'>Careful Saurus</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/carefulsaurus' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNeT22-1n3Xi9O_WwbYgNtsj' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -440,7 +446,7 @@
     </div>      
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/hackbot.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('hackbot');" id='loadpopup'><img class='imagem_bloco' src="projetos/hackbot.png"></img></a>
       <div class='block-title'>Hack Bot</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/kanaveral-5938/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://ldjam.com/users/gene-z/games' target="_blank"><img class='icone' src='icons/ludumdare.png'></img></a></div>
@@ -448,7 +454,7 @@
     </div>      
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/supercargo.PNG">
+      <a href='#popup' onclick="function_carrega_popup_imgs('supercargo');" id='loadpopup'><img class='imagem_bloco' src="projetos/supercargo.PNG"></img></a>
       <div class='block-title'>Super Cargo</div>  
       <div class='div-icone'><a href='https://genezgames.itch.io/super-cargo' target="_blank"><img class='icone' src='icons/itchio.png'></img></a></div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNfyY_sN27AG1q-gr--VLbie' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -456,7 +462,7 @@
     </div>     
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/kanaveral.PNG">
+      <a href='#popup' onclick="function_carrega_popup_imgs('kanaveral');" id='loadpopup'><img class='imagem_bloco' src="projetos/kanaveral.PNG"></img></a>
       <div class='block-title'>Kanaveral</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/kanaveral-5938/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/kanaveral' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
@@ -466,7 +472,7 @@
     </div>       
     
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/bombshellnews.PNG">
+      <a href='#popup' onclick="function_carrega_popup_imgs('bombshellnews');" id='loadpopup'><img class='imagem_bloco' src="projetos/bombshellnews.PNG"></img></a>
       <div class='block-title'>Bomb Shell News</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/bombshell-news-5940/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://ldjam.com/users/gene-z/games' target="_blank"><img class='icone' src='icons/ludumdare.png'></img></a></div>
@@ -474,7 +480,7 @@
     </div>   
   
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/ddragonadv.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('ddragonadv');" id='loadpopup'><img class='imagem_bloco' src="projetos/ddragonadv.png"></img></a>
       <div class='block-title'>Double Dragon Adventure</div>
       <div class='div-icone'><a href='https://www.construct.net/en/free-online-games/double-dragon-adventure-6238/play' target="_blank"><img class='icone' src='icons/scirraarcade.png'></img></a>    </div>
       <div class='div-icone'><a href='https://youtube.com/playlist?list=PLhA4pyNK_bNeVMiqvi-9mKSMUCFQgR44j' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -483,7 +489,7 @@
     </div>  
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/australiaadv.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('australiaadv');" id='loadpopup'><img class='imagem_bloco' src="projetos/australiaadv.png"></img></a>
       <div class='block-title'>Australia Adventure</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/australia-adventure' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNfELwtkPCPVzLxydSfQS1we' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
@@ -491,14 +497,14 @@
     </div>  
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/banze.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('banze');" id='loadpopup'><img class='imagem_bloco' src="projetos/banze.png"></img></a>
       <div class='block-title'>Banzé</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/banze' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNefspLLB7tOVTnhAfSjV0Sv' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
     </div> 
 
     <div class="blocks" >
-      <img class='imagem_bloco' src="projetos/novarichadoimperador.png">
+      <a href='#popup' onclick="function_carrega_popup_imgs('novarichadoimperador');" id='loadpopup'><img class='imagem_bloco' src="projetos/novarichadoimperador.png"></img></a>
       <div class='block-title'>A Nova Richa do Imperador</div>
       <div class='div-icone'><a href='https://www.kongregate.com/games/Genezgames/a-nova-richa-do-imperador' target="_blank"><img class='icone' src='icons/kongregate.png'></img></a></div>
       <div class='div-icone'><a href='https://www.youtube.com/playlist?list=PLhA4pyNK_bNcS4ogrUI50Oh4yEBTGMkYa' target="_blank"><img class='icone' src='icons/youtube.png'></img></a></div>
