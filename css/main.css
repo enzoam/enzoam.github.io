@@ -1,5 +1,4 @@
-body{
-    background-image: url("background.png");
+  body{
     background-position: center;
     background-color:rgb(13, 2, 49);
     min-width: 1000px;
@@ -37,11 +36,11 @@ body{
   }	
 
   .blocks{
-    width: 250px;
+    width: 230px;
     padding: 0px;
     margin: 20px;
     float: left;
-    height: 330px; 
+    height: 290px; 
     /*box-shadow: 0px 0px 5px 0px #5a5a5a;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
