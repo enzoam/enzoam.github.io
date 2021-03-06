@@ -15,3 +15,4 @@ function function_carrega_popup_imgs(game) {
 function function_close_popup() {
     document.getElementById("popup").style.display = "none";
 }
+

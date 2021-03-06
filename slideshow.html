@@ -673,13 +673,12 @@ for (var i = 0; i < url.length; i++) {
     <div style='width: 1370px;'>
 
     <script>
+
+
     for (i=1;i<=5;i++){
-        var nomeimagem = "projetos/shots/" + selgame + i + ".png";
-        //tester=new Image();
-        //tester.src = nomeimagem; 
-       // alert(tester.src);
+        var nomeimagem = "shots/" + selgame + i + ".png";
        //if (tester.complete){       
-            document.write("<div class='sshot'><img style='border-radius: 20px;' width='100%' height='100%' src='"+ nomeimagem +"'></img></div>");
+            document.write("<div class='sshot'><img style='border-radius: 20px;' width='100%' height='100%' src='"+ nomeimagem +"' onError='this.onerror=null;this.src=" + "\"" + "img/imgfail.png" +"\"" + ";'></img></div>");
        //}else{
        //     document.write("<div class='sshot'><img style='border-radius: 20px;' width='100%' height='100%' src='img/imgfail.png'></img></div>");
        //}

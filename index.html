@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <script src="js/jquery-2.1.4.min.js"></script>
@@ -11,130 +11,6 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0" nonce="Pqu80jb1"></script>
 
 <!--FILES DONWLOADS www.4shared.com-->
-
-<style>
-
-    body{
-      background-image: url("background.png");
-      background-position: center;
-      background-color:rgb(13, 2, 49);
-    }
-
-    .painel_left{
-      padding: 10px;
-      margin: 10px 10px 40px 10px;
-      float: left;
-      width: 8%;
-      height: 100px; 
-      background-color:transparent;
-      border-radius: 0px;
-    }	
-
-    .painel_right{
-      padding: 10px;
-      margin: 10px 10px 40px 10px;
-      float: left;
-      width: 85%;
-      height: 100px; 
-      background-color:transparent;
-      border-radius: 0px;
-    }	
-
-    .block_canal{
-      height: 500px; 
-      padding-left: 30px;
-      float: left;
-      width: 100%; 
-      background-color: transparent; /* Used if the image is unavailable */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-    }	
-
-    .blocks{
-      width: 250px;
-      padding: 0px;
-      margin: 20px;
-      float: left;
-      height: 330px; 
-      /*box-shadow: 0px 0px 5px 0px #5a5a5a;
-      border-top-left-radius: 50px;
-      border-top-right-radius: 50px;
-      background-image: url('backblock.jpg') ;*/
-      background-color: transparent; /* Used if the image is unavailable */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size:1500px; /* Resize the background image to cover the entire container */
-    }	
-
-    .block-title{
-      color:rgb(255, 255, 255);
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .imagem_painel{
-      width:  100px; 
-      height:  auto; 
-      padding: 10px;
-      box-shadow: 0px 0px 5px 0px #5a5a5a;
-      border-radius: 50%;
-    }	
-
-    .imagem_bloco{
-      width:  98%; 
-      height:  55%;
-      box-shadow: 0px 0px 5px 0px #5a5a5a;
-      border-radius: 40px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: white;
-    }	
-
-    .imagem_boxart{
-      width:  100%; 
-      height:  100%;
-      box-shadow: 0px 0px 5px 0px #5a5a5a;
-      border-radius: 10px;
-    }	
-
-    .imagem_loose{
-      padding-top:30px;
-      width:  100%; 
-      height:  auto;
-      border-width: 0px;
-      border-style: none;
-    }	
-
-    .icone{
-      width:  32px; 
-      height:  32px; 
-      box-shadow: 0px 0px 5px 0px #5a5a5a;
-      border-radius: 5px;
-    }	
-
-    .div-icone{
-      font-size: auto; 
-      float: left;
-      margin: 8px;
-    }
-
-    .div-main-icone{
-      font-size: auto; 
-      float: left;
-      margin-left : 30px;
-      margin-top : 30px;
-      color:rgb(135, 235, 248);
-      text-align: center;
-    }
-
-    .icone-grande{
-      width:  64px; 
-      height:  64px; 
-      border-radius: 5px;
-    }	
-
-</style>
 
 <body>
 <article>
@@ -146,17 +22,19 @@
           </div>  
     </div>
 
+    <div style='float:right; margin-right:30px;' class="fb-like" data-href="https://www.facebook.com/genezgames.site" data-width="32" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+    
+
     <div id='popup' style='position: fixed; top: 100px; margin-left: 10%; margin-right: auto; width: 80%; min-width:600px; height:700px; background-color: rgb(0, 64, 75); z-index:200; border-radius: 20px; border-style: outset; background-image: url("background.png"); display: none;'>
       <div style='float: right; padding:5px;'><a href='#popup' onclick='function_close_popup();'><img height='25' width='25' src='img/close.png'></img></a></div> 
       <div id='popupcontent' style='width: 100%;  height: 100%; '>
-
+  
       </div>
     </div>
 
-    <div style='float:right; margin-right:30px;' class="fb-like" data-href="https://www.facebook.com/genezgames.site" data-width="32" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
-    
+
     <div class="block_canal">
-      <iframe height="400" width="500" style='border-color: rgba(73, 2, 73, 0.63); border-width: 3px; border-radius: 20px; float: left; margin-right: 20px;' src="https://www.youtube.com/embed/jb9R41kjxnE?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <iframe height="250" width="350" style='border-color: rgba(73, 2, 73, 0.63); border-width: 3px; border-radius: 20px; float: left; margin-right: 20px;' src="https://www.youtube.com/embed/jb9R41kjxnE?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
       <div class='div-main-icone'><a href='https://www.scirra.com/store/sellers/enzo-m-622' target="_blank"><img class='icone-grande' src='icons/assetshop.png'></img></a><br>Assets</div>
       <div class='div-main-icone'><a href='http://ludumdare.com/compo/author/gene-z/' target="_blank"><img class='icone-grande' src='icons/ludumdare.png'></img></a><br>LudumDare</div>
@@ -173,6 +51,7 @@
       <div class='div-main-icone'><a href='https://soundcloud.com/genez-gam' target="_blank"><img class='icone-grande' src='icons/genezmusic.png'></img></a><br>GZMusic</div>
       <div class='div-main-icone'><a href='https://soundcloud.com/paulo-roberto-896823174' target="_blank"><img class='icone-grande' src='icons/paulomangili.png'></img></a><br>PauloMangili</div>
     </div>
+
 
     <div class="blocks" >
       <a href='#popup' onclick="function_carrega_popup_imgs('receitafederal3dbox');" id='loadpopup'><img class='imagem_boxart' src="projetos/receitafederal3dbox.png"></img></a>
@@ -406,7 +285,56 @@
       <a href='#popup' onclick="function_carrega_popup_imgs('enduroremake');" id='loadpopup'><img class='imagem_loose' src="projetos/enduroremake.png"></img></a>
     </div>
 
+    <!-- LABS  -->
 
-</article>
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('3dcar');" id='loadpopup'><img class='imagem_disk' src="labs/3dcar.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('4bitpinball');" id='loadpopup'><img class='imagem_disk' src="labs/4bitpinball.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('aberturajb');" id='loadpopup'><img class='imagem_disk' src="labs/aberturajb.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('alkvir');" id='loadpopup'><img class='imagem_disk' src="labs/alkvir.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('alteredbeast');" id='loadpopup'><img class='imagem_disk' src="labs/alteredbeast.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('aquajet');" id='loadpopup'><img class='imagem_disk' src="labs/aquajet.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('barbarovskungfoda');" id='loadpopup'><img class='imagem_disk' src="labs/barbarovskungfoda.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('bareknuclespecial');" id='loadpopup'><img class='imagem_disk' src="labs/bareknuclespecial.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('batalhaespacial');" id='loadpopup'><img class='imagem_disk' src="labs/batalhaespacial.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('bayblade');" id='loadpopup'><img class='imagem_disk' src="labs/bayblade.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('bug');" id='loadpopup'><img class='imagem_disk' src="labs/bug.png"></img></a>
+    </div>
+
+    <div class="blocks" >
+      <a href='#popup' onclick="function_carrega_popup_imgs('heightmapwebgl3d');" id='loadpopup'><img class='imagem_disk' src="labs/heightmapwebgl3d.png"></img></a>
+    </div>
+    
+  </article>
 </body>
 </html>
