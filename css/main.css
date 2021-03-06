@@ -101,6 +101,14 @@ body{
     border-style: none;
   }	
 
+  .imagem_cd_soft{
+    padding-top:60px;
+    width:  100%; 
+    height:  auto;
+    border-width: 0px;
+    border-style: none;
+  }	
+
   .icone{
     width:  32px; 
     height:  32px; 
