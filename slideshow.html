@@ -258,6 +258,12 @@ for (var i = 0; i < url.length; i++) {
             }
         </script>
     </div>
+
+    <script>
+            var nomebackground = "projetos/" + selgame + ".png";
+            document.write("<div style='right: 20px; top: 310px; position: fixed;'><img width='64px' height='auto'  src='"+ nomebackground +"' onError='this.onerror=null;this.src=" + "\"" + "img/imgfail.png" +"\"" + ";'></img></div>");
+    </script>
+
     <div style='width: 50%; float:left; min-width:280px;'>
         <script>
             switch (selgame){
@@ -673,8 +679,6 @@ for (var i = 0; i < url.length; i++) {
     <div style='width: 1370px;'>
 
     <script>
-
-
     for (i=1;i<=5;i++){
         var nomeimagem = "shots/" + selgame + i + ".png";
        //if (tester.complete){       
