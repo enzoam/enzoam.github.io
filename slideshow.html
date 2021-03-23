@@ -81,6 +81,9 @@ for (var i = 0; i < url.length; i++) {
     <div style='width: 50%; float:left;'>
         <script>
             switch (selgame){
+            case 'illegibilus#####':
+                document.write("<iframe class='gametube' height='90%' width='90%' src='https://youtube.com/embed/playlist?list=PLhA4pyNK_bNeFAuczyz85a3r-4iSVXfom&autoplay=1&mute=0&controls=1&loop=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+                break;
             case 'receitafederal3dbox':
                 document.write("<iframe class='gametube' height='90%' width='90%' src='https://youtube.com/embed/playlist?list=PLhA4pyNK_bNeFAuczyz85a3r-4iSVXfom&autoplay=1&mute=0&controls=1&loop=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
                 break;
@@ -400,6 +403,10 @@ for (var i = 0; i < url.length; i++) {
     <div style='width: 50%; float:left; min-width:280px;'>
         <script>
             switch (selgame){
+            case 'illegibilus':
+                document.write("<div class='block-title'>Illegibilus</div>");
+                document.write("<div class='div-icone'><a href='https://www.construct.net/en/free-online-games/illegibilus-25192/play' target='_blank'><img class='icone' src='icons/scirraarcade.png'></img></a><br>Jogar</div>");   
+                break;
             case 'receitafederal3dbox':
                 document.write("<div class='block-title'>Receita Federal 3D<br><sub>(Global Game Jam 2021)</sub></div>");     
                 document.write("<div class='div-icone'><a href='https://genezgames.itch.io/receita-federal-3d' target='_blank'><img class='icone' src='icons/itchio.png'></img></a><br>Jogar</div>");
