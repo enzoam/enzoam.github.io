@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1617324224,
+	"version": 1617328792,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -18,7 +18,10 @@
 		"images/btn_left-sheet1.png",
 		"images/btn_up-sheet0.png",
 		"images/btn_up-sheet1.png",
+		"images/btn_right-sheet0.png",
+		"images/btn_right-sheet1.png",
 		"images/btn_down-sheet0.png",
+		"images/btn_down-sheet1.png",
 		"images/titlecampinho.png",
 		"images/illegibilus-sheet0.png",
 		"images/tiledbackground4.png",
