@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1617368447,
+	"version": 1617369699,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -42,6 +42,7 @@
 		"images/key_down-sheet0.png",
 		"images/key_left-sheet0.png",
 		"images/key_right-sheet0.png",
+		"images/tiledbackground3.png",
 		"media/apito1.m4a",
 		"media/apito1.ogg",
 		"media/apito2.m4a",
