@@ -51,6 +51,22 @@
     background-size:1500px; /* Resize the background image to cover the entire container */
   }	
 
+  .block_main_game{
+    width: 260px;
+    padding: 0px;
+    margin: 10px;
+    float: left;
+    height: 320px; 
+    /*box-shadow: 0px 0px 5px 0px #5a5a5a;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: url('backblock.jpg') ;*/
+    background-color: transparent; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:1500px; /* Resize the background image to cover the entire container */
+  }	
+
   .block-title{
     color:rgb(255, 255, 255);
     text-align: center;
@@ -75,7 +91,7 @@
     border-style: solid;
     border-color: white;
   }	
-
+  
   .imagem_boxart{
     width:  100%; 
     height:  100%;
