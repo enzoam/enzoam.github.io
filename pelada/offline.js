@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1617321073,
+	"version": 1617321705,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -18,6 +18,7 @@
 		"images/btn_left-sheet1.png",
 		"images/btn_up-sheet0.png",
 		"images/btn_up-sheet1.png",
+		"images/btn_down-sheet0.png",
 		"images/titlecampinho.png",
 		"images/illegibilus-sheet0.png",
 		"images/tiledbackground4.png",
@@ -32,6 +33,7 @@
 		"images/iconcc2-sheet1.png",
 		"images/backgroundicon.png",
 		"images/gramado.png",
+		"images/tiledbackground.png",
 		"media/apito1.m4a",
 		"media/apito1.ogg",
 		"media/apito2.m4a",
