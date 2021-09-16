@@ -26,7 +26,8 @@
   }	
 
   .block_canal{
-    height: 350px; 
+    height: 400px; 
+    padding-top: 20px;
     padding-left: 30px;
     float: left;
     width: 100%; 
@@ -34,6 +35,17 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
   }	
+
+  .block_links{
+    height: 200px; 
+    /*padding-left: 3px;*/
+    float: left;
+    width: 100%; 
+    background-color: transparent; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+  }	
+
 
   .blocks{
     width: 230px;
@@ -52,15 +64,11 @@
   }	
 
   .block_main_game{
-    width: 260px;
+    width: 23%;
     padding: 0px;
     margin: 10px;
     float: left;
-    height: 320px; 
-    /*box-shadow: 0px 0px 5px 0px #5a5a5a;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-image: url('backblock.jpg') ;*/
+    height: 380px; 
     background-color: transparent; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
