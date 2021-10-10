@@ -1,0 +1,1 @@
+<?php echo "Só o texto - OK"; ?>
