@@ -1,8 +1,5 @@
 <html>
-  
 <head>
-
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>genezgames</title>
@@ -35,10 +32,6 @@
       </div>      
       <nav class="main-nav">                
         <a href="#home">Home</a>
-        <a href="#jams">Jams</a>
-        <a href="#vintages">Vintages</a>
-        <a href="#labs">Labs</a>
-        <a href="#">Recentes</a>
         <a target="_blank" href="https://github.com/enzoam?tab=repositories">Github</a>        
       </nav>
       <nav class="sub-nav">
@@ -47,147 +40,44 @@
     </header>
     <!-- END OF HEADER -->
     
+
+    <script>
+      function checkFile(i) {
+        file_path = window.location.pathname.replace('index_new.html','content/' + i + '/cover.png');
+        $.ajax({
+            url: file_path,
+            type: 'HEAD',
+            success: function () {
+              $('auto').append('<a href="#popup" onclick="function_carrega_popup_imgs(' + i + ');" id="loadpopup"><img alt="" src="content/' + i + '/cover.png?raw=true"><br><br> CODE ' + i + '</a>');
+            },
+            error: function () {
+              $('auto').append('<a style="display:none;" href="#popup" onclick="function_carrega_popup_imgs(0);" id="loadpopup"><img alt="" src="content/0/cover.png?raw=true"><br><br> CODE 0</a>');
+            },
+        })
+      }
+    </script>
+
     <!-- MAIN CONTAINER -->
     <section class="main-container" >
+
       <div class="location" id="home">
-          <h1 id="home">Jogos</h1>
-          <div class="box">
-            <a href="#popup" onclick="function_carrega_popup_imgs('supermintendroids');" id='loadpopup'><img alt="" src="projetos/supermintendroids.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('megacleanerkingdom');" id='loadpopup'><img alt="" src="projetos/megacleanerkingdom.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('neslakedragon');" id='loadpopup'><img alt="" src="projetos/neslakedragon.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('mastersystemofpumpkins');" id='loadpopup'><img alt="" src="projetos/mastersystemofpumpkins.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('gameboyvsspacepirates');" id='loadpopup'><img alt="" src="projetos/gameboyvsspacepirates.png?raw=true"></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('ataritreasuretracker');" id='loadpopup'><img alt="" src="projetos/ataritreasuretracker.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('packmanx');" id='loadpopup'><img alt="" src="projetos/packmanx.png?raw=true" ></a>
-            <a href="#popup" onclick="function_carrega_popup_imgs('spaceblastprocessing');" id='loadpopup'><img alt="" src="projetos/spaceblastprocessing.png?raw=true" ></a>
-            <a href='#popup' onclick="function_carrega_popup_imgs('snakepitlarrybox');" id='loadpopup'><img alt="" src="projetos/snakepitlarrybox.png?raw=true"></img></a>   
-            <a href='#popup' onclick="function_carrega_popup_imgs('meudiatododiabox');" id='loadpopup'><img alt="" src="projetos/meudiatododiabox.png?raw=true"></img></a>
-            <a href='#popup' onclick="function_carrega_popup_imgs('blackholedeepbox');" id='loadpopup'><img alt="" src="projetos/blackholedeepbox.png?raw=true"></img></a>
-          </div>
-      </div>
-      
+        <h1 id="home">Game List</h1>
+        <div>
+        <auto class="box">
+        <script>
+            var file_path;
+            var resultado;
+            var i;
 
-      <h1 id="projetos">Projetos</h1>
-      <div class="box">
-        <a href="#popup" onclick="function_carrega_popup_imgs('pelada');" id='loadpopup'><img alt="" src="projetos/pelada.png?raw=true" ></a>
-        <a href="#popup" onclick="function_carrega_popup_imgs('illegibilus');" id='loadpopup'><img alt="" src="projetos/illegibilus.png?raw=true" ></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('retrofactorybox');" id='loadpopup'><img alt="" src="projetos/retrofactorybox.png?raw=true"></img></a> 
-        <a href='#popup' onclick="function_carrega_popup_imgs('superenzoadventureart');" id='loadpopup'><img alt="" src="projetos/superenzoadventureart.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('manmade');" id='loadpopup'><img alt="" src="projetos/manmade.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('diverquest');" id='loadpopup'><img alt="" src="projetos/diverquest.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('chompchompman');" id='loadpopup'><img alt="" src="projetos/chompchompman.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('100mtsrun');" id='loadpopup'><img alt="" src="projetos/100mtsrun.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('medievaldefense');" id='loadpopup'><img alt="" src="projetos/medievaldefense.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('nutracer');" id='loadpopup'><img alt="" src="projetos/nutracer.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('spacetempest');" id='loadpopup'><img alt="" src="projetos/spacetempest.png?raw=true"></img></a>
-      </div>
-      
-      <h1 id="jams">Game Jams</h1>
-      <div class="box">
-        <a href="#popup" onclick="function_carrega_popup_imgs('receitafederal3dbox');" id='loadpopup'><img alt="" src="projetos/receitafederal3dbox.png?raw=true" ></a>
-        <a href="#popup" onclick="function_carrega_popup_imgs('bricklayerbox');" id='loadpopup'><img alt="" src="projetos/bricklayerbox.png?raw=true" ></a>    
-        <a href='#popup' onclick="function_carrega_popup_imgs('freeasabirdbox');" id='loadpopup'><img alt="" src="projetos/freeasabirdbox.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('manmadereborn');" id='loadpopup'><img alt="" src="projetos/manmadereborn.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('kingslittlehelperbox');" id='loadpopup'><img class='imagem_boxart ' src="projetos/kingslittlehelperbox.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('ritualhero');" id='loadpopup'><img alt="" src="projetos/ritualhero.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('sonarbox');" id='loadpopup'><img alt="" src="projetos/sonarbox.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('azimuth');" id='loadpopup'><img alt="" src="projetos/azimuth.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('slugcontestbox');" id='loadpopup'><img alt="" src="projetos/slugcontestbox.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('rrturbotest');" id='loadpopup'><img alt="" src="projetos/rrturbotest.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('aedessimulation');" id='loadpopup'><img alt="" src="projetos/aedessimulation.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('blackholeshit');" id='loadpopup'><img alt="" src="projetos/blackholeshit.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('onepop');" id='loadpopup'><img alt="" src="projetos/onepop.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('fallfromouterspace');" id='loadpopup'><img alt="" src="projetos/fallfromouterspace.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('obsidian');" id='loadpopup'><img alt="" src="projetos/obsidian.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('nightharvest');" id='loadpopup'><img alt="" src="projetos/nightharvest.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('alienfury');" id='loadpopup'><img alt="" src="projetos/alienfury.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('aftergear');" id='loadpopup'><img alt="" src="projetos/aftergear.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('parella');" id='loadpopup'><img alt="" src="projetos/parella.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('wire');" id='loadpopup'><img alt="" src="projetos/wire.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('egyptris');" id='loadpopup'><img class='imagem_loose' src="projetos/egyptris.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('lastnightonearth');" id='loadpopup'><img class='imagem_loose' src="projetos/lastnightonearth.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('carefulsaurus');" id='loadpopup'><img class='imagem_loose' src="projetos/carefulsaurus.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('hackbot');" id='loadpopup'><img class='imagem_loose' src="projetos/hackbot.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('supercargo');" id='loadpopup'><img class='imagem_loose' src="projetos/supercargo.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('kanaveral');" id='loadpopup'><img class='imagem_loose' src="projetos/kanaveral.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('bombshellnews');" id='loadpopup'><img class='imagem_loose' src="projetos/bombshellnews.png?raw=true"></img></a>         
-      </div>
-      
+            for (i = 500 ; i >= 0 ; i--) {
+                checkFile(i);
+            }
 
-      <h1 id="vintages">Vintages</h1>
-      <div class="box">
-        <a href='#popup' onclick="function_carrega_popup_imgs('ddragonadv');" id='loadpopup'><img class='imagem_loose' src="projetos/ddragonadv.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('australiaadv');" id='loadpopup'><img class='imagem_loose' src="projetos/australiaadv.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('novarichadoimperador');" id='loadpopup'><img class='imagem_loose' src="projetos/novarichadoimperador.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('fightersmegamix');" id='loadpopup'><img class='imagem_loose' src="projetos/fightersmegamix.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('banze');" id='loadpopup'><img class='imagem_loose' src="projetos/banze.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('mission5');" id='loadpopup'><img class='imagem_loose' src="projetos/mission5.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('doom3newworld');" id='loadpopup'><img class='imagem_loose' src="projetos/doom3newworld.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('vectorshot');" id='loadpopup'><img class='imagem_loose' src="projetos/vectorshot.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('sonictimetravel');" id='loadpopup'><img class='imagem_loose' src="projetos/sonictimetravel.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('spacestorm');" id='loadpopup'><img class='imagem_loose' src="projetos/spacestorm.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('operacaoresgate');" id='loadpopup'><img class='imagem_loose' src="projetos/operacaoresgate.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('killerstreet');" id='loadpopup'><img class='imagem_loose' src="projetos/killerstreet.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('bombastic');" id='loadpopup'><img class='imagem_loose' src="projetos/bombastic.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('blockterminator');" id='loadpopup'><img class='imagem_loose' src="projetos/blockterminator.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('seaquestremake');" id='loadpopup'><img class='imagem_loose' src="projetos/seaquestremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('riverraidremake');" id='loadpopup'><img class='imagem_loose' src="projetos/riverraidremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('pitfall2remake');" id='loadpopup'><img class='imagem_loose' src="projetos/pitfall2remake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('pacmanremake');" id='loadpopup'><img class='imagem_loose' src="projetos/pacmanremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('keystonekapersremake');" id='loadpopup'><img class='imagem_loose' src="projetos/keystonekapersremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('froggerremake');" id='loadpopup'><img class='imagem_loose' src="projetos/froggerremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('enduroremake');" id='loadpopup'><img class='imagem_loose' src="projetos/enduroremake.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('newturtleattack');" id='loadpopup'><img class='imagem_loose' src="projetos/newturtleattack.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('enferbase');" id='loadpopup'><img class='imagem_cd_soft' src="projetos/enferbase.png?raw=true"></img></a>           
-      </div>
-
-      <h1 id="labs">Gene-Z Games LABS</h1>
-      <div class="box">
-        <a href='#popup' onclick="function_carrega_popup_imgs('3dcar');" id='loadpopup'><img class='imagem_disk' src="labs/3dcar.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('4bitpinball');" id='loadpopup'><img class='imagem_disk' src="labs/4bitpinball.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('aberturajb');" id='loadpopup'><img class='imagem_disk' src="labs/aberturajb.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('alkvir');" id='loadpopup'><img class='imagem_disk' src="labs/alkvir.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('alteredbeast');" id='loadpopup'><img class='imagem_disk' src="labs/alteredbeast.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('aquajet');" id='loadpopup'><img class='imagem_disk' src="labs/aquajet.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('barbarovskungfoda');" id='loadpopup'><img class='imagem_disk' src="labs/barbarovskungfoda.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('bareknuclespecial');" id='loadpopup'><img class='imagem_disk' src="labs/bareknuclespecial.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('batalhaespacial');" id='loadpopup'><img class='imagem_disk' src="labs/batalhaespacial.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('bayblade');" id='loadpopup'><img class='imagem_disk' src="labs/bayblade.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('bug');" id='loadpopup'><img class='imagem_disk' src="labs/bug.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('heightmapwebgl3d');" id='loadpopup'><img class='imagem_disk' src="labs/heightmapwebgl3d.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('crazyharvest');" id='loadpopup'><img class='imagem_disk' src="labs/crazyharvest.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('cruzadoresdovale');" id='loadpopup'><img class='imagem_disk' src="labs/cruzadoresdovale.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('darius2clone');" id='loadpopup'><img class='imagem_disk' src="labs/darius2clone.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('dd2nesclone');" id='loadpopup'><img class='imagem_disk' src="labs/dd2nesclone.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('franciscostreet');" id='loadpopup'><img class='imagem_disk' src="labs/franciscostreet.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('ghostsngoblins');" id='loadpopup'><img class='imagem_disk' src="labs/ghostsngoblins.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('goldenaxez');" id='loadpopup'><img class='imagem_disk' src="labs/goldenaxez.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('jamesspacerescue');" id='loadpopup'><img class='imagem_disk' src="labs/jamesspacerescue.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('jedifight');" id='loadpopup'><img class='imagem_disk' src="labs/jedifight.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('100mtsjquery');" id='loadpopup'><img class='imagem_disk' src="labs/100mtsjquery.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('aghostpathrun');" id='loadpopup'><img class='imagem_disk' src="labs/aghostpathrun.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('jogopingpong');" id='loadpopup'><img class='imagem_disk' src="labs/jogopingpong.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('tnttext');" id='loadpopup'><img class='imagem_disk' src="labs/tnttext.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('larobodela');" id='loadpopup'><img class='imagem_disk' src="labs/larobodela.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('larodelamexicana');" id='loadpopup'><img class='imagem_disk' src="labs/larodelamexicana.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('larodela');" id='loadpopup'><img class='imagem_disk' src="labs/larodela.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('manualdefrag');" id='loadpopup'><img class='imagem_disk' src="labs/manualdefrag.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('megamanclone');" id='loadpopup'><img class='imagem_disk' src="labs/megamanclone.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('modeseven');" id='loadpopup'><img class='imagem_disk' src="labs/modeseven.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('parasolmushroom');" id='loadpopup'><img class='imagem_disk' src="labs/parasolmushroom.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('phpman');" id='loadpopup'><img class='imagem_disk' src="labs/phpman.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('polecar');" id='loadpopup'><img class='imagem_disk' src="labs/polecar.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('projectaction');" id='loadpopup'><img class='imagem_disk' src="labs/projectaction.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('projectadvent');" id='loadpopup'><img class='imagem_disk' src="labs/projectadvent.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('projectruinas');" id='loadpopup'><img class='imagem_disk' src="labs/projectruinas.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('startrekfftf');" id='loadpopup'><img class='imagem_disk' src="labs/startrekfftf.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('starcrusher');" id='loadpopup'><img class='imagem_disk' src="labs/starcrusher.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('supermariocraft');" id='loadpopup'><img class='imagem_disk' src="labs/supermariocraft.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('tiowontiou');" id='loadpopup'><img class='imagem_disk' src="labs/tiowontiou.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('toejamba');" id='loadpopup'><img class='imagem_disk' src="labs/toejamba.png?raw=true"></img></a>
-        <a href='#popup' onclick="function_carrega_popup_imgs('warz');" id='loadpopup'><img class='imagem_disk' src="labs/warz.png?raw=true"></img></a>               
-      </div>
-     
+        </script>
+        </auto>
+        </div>
+    </div>
+  
     <!-- END OF MAIN CONTAINER -->
 
     <style>
@@ -240,8 +130,8 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>&copy 1997-2021 Gene-Z Games</p>
-      <p>Enzo A. M. 2021</p>
+      <p>&copy 1997-2025 Gene-Z Games</p>
+      <p>Enzo A. M. 2025</p>
     </footer>
   </div>
 </body>

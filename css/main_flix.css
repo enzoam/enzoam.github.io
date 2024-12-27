@@ -105,11 +105,20 @@ header {
 .box {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
 }
 
 .box a {
-  transition: transform .3s;  
+  transition: transform .3s; 
+  width: 200px;
+  height: 350px;
+  padding: 10px; 
+  color: white;
+  border-style:inset;
+  border-radius: 30px;
+  border-color: #686868;
+  background-color:black;
+  /*background-image: url('background.png');*/
 }
 
 .box a:hover {

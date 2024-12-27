@@ -1,0 +1,39 @@
+
+
+ .ytframe {
+    float: left
+ }
+
+ .gametext {
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    float: right; 
+    width: 48%; 
+    height: 280px; 
+    padding: 5px; 
+    overflow-y: auto; 
+    background-color: transparent;
+ }
+
+ .linkicones{
+    margin-top:10px;
+    float: right;
+    padding: 5px;
+    width: 48%; 
+    height: 50px; 
+    background-color: transparent;
+ }
+
+ .icone{
+    width:40px;
+    height:40px;
+    float:left;
+    background-color: transparent;
+    color: white;
+    font-size: 10px;
+    margin-right: 20px;
+    text-align: center;
+ }
+
+ 
