@@ -105,13 +105,13 @@ header {
 .box {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
 }
 
 .box a {
   transition: transform .3s; 
-  width: 200px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   padding: 10px; 
   color: white;
   border-style:inset;
@@ -130,6 +130,7 @@ header {
 
 .box img {
   border-radius: 2px;
+  width: 100%;
 }
 
 /* LINKS */
