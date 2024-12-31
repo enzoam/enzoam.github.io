@@ -1,22 +1,23 @@
 <script>
-let actualfile = new Date().valueOf();
-//alert(actualfile);
-</script>
-
-
-<link rel="stylesheet" type="text/css" href="../../../css/gamepage.css">
-
-<iframe class="ytframe" width="48%" height="100%" src="https://www.youtube.com/embed/3j1l8Ywm1vo" title="Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<div class="gametext">
-    Painel
-</div>
-
-<div class="linkicones">
-    <a class="icone" style='display:block;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/itchio.png"></img>play</a>
-    <a class="icone" style='display:none;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/github.png"></img>git</a>
-    <a class="icone" style='display:none;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/youtube.png"></img>stream</a>
-    <a class="icone" style='display:none;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/globalgamejam.png"></img>jam</a>
-    <a class="icone" style='display:none;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/documento.png"></img>manual</a>
-    <a class="icone" style='display:none;'  target='_blank' href=""><img height="100%" width="100%"  src="../../../icons/assetshop.png"></img>baixar</a>
-</div>
+    let actualfile = new Date().valueOf();
+    //alert(actualfile);
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="../../../css/gamepage.css">
+    
+    <iframe class='ytframe' width='48%' height='100%' src='https://www.youtube.com/embed/Wpwb2zBERhI' title='Gameplay' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
+    
+    <div class="gametext">
+    A* Ghost Path Run<br><br>
+    Jogo IA AStar Jquery / CSS / Html / Web Hoje, vamos saborear uma Web Salada que deverá ser preparada com o mínimo de Inteligência pelo desenvolvedor. Mas para que a salada fique saborosa e não perca a consistência é preciso que contenha os temperos JQUERY e CSS na composição. A receita leva um tempo para preparar, mas o resultado é muito apetitoso. A Web Salada pode ser preparada em qualquer editor de textos (recomendamos pelo menos o notepad ++), mas fica muito bonita e colorida se preparada e servida em uma vasilha da marca ECLIPSE. “A* Ghost Pathrun é um jogo criado para ambiente Web com a técnica de Inteligência Artificial (A*)” Configuração inicial de ambiente Randômico. Dificuldade / Objetivo também randômico. O jogo é baseado na técnica de IA : A* Pathfiding, onde até 3 fantasmas podem seguir o mesmo objetivo (Você) simultâneamente… O objetivo do jogo é capturar os monstros que estão no cemitério,, mas é preciso ter cuidado para não utilizar a sua mágica nas lápides ou nos fantasmas… ou poderá perder suas chances… Gerado em um ambiente WEB a linguagem escolhida para desenvolvimento do game foi o JavaScript, em união com a biblioteca jquery-1.7.1.min O game está dividido em 3 arquivos principais: pathrun.html = Esqueleto e chamadas do game. pathrun.css = Configura todo o Ambiente e Sprites. pathrun.js = Interação e funcionalidades do game. Cada clique do mouse aciona a função de busca do A*,fazendo que surja mais um fantasma a sua procura. Para configuração do pathfiding a tela foi divida em blocos de 32×32 pixels e todos os sprites foram configurados com o mesmo tamanho dos blocos, facilitando o calculo de posicionamento. Ao Iniciar o game, carregam-se : Variáveis globais; Arquivos de som; Nesmo momento também são chamadas as configurações de ambiente no arquivo css. Inicia-se o processo de construção do ambiente e então mostra a primeira mensagem do jogo: “ELIMINE OS MONSTROS, MAS NAO DEIXE OS FANTASMAS TE PEGAREM.” Ao iniciar o game, o primeiro processo randômico de criação do cenário é consolidado com as implementações do path fiding PathfindingSearch(). Inicia-se então as variáveis padrão do jogo e os textos de informação do painel direito da tela. Os [nodes] do grid do cenário vão se formando um a um e conforme as configurações randômicas criadas definem cada bloco como cenário padrão, monstro, lápide de cemitério ou posição inicial dos fantasmas. Cada clique na tela chama a função PathfindingSearch.prototype.cellClicked() Que executa as rotinas  de verificação do bloco clicado e aciona o A* criando um fantasma e iniciando o processo de Pathfiding pelo mesmo… As verificações de bloco e a função de A* e Pathfiding repetem-se até não restarem chances para o jogador, ou o clique tenha sido feito em um bloco com um fantasma ou todos os monstros tenham sido capturados.  Para preparar o game siga os passos a seguir : 1) INSTALE O NOTEPAD ++ (SE DESEJAR) 2) ABRA O NOTEPAD, O EDITOR DE TEXTOS DE SUA PREFERENCIA OU ALGUMA IDE DE SEU USO 3) CRIE UM NOVO ARQUIVO COM A EXTENSÃO .HTML (Pode ser pathrun.html) 4) COPIE O CÓDIGO ABAIXO PARA ESTE ARQUIVO (ESTE CÓDIGO VAI SER SERVIR COMO MOLDURA PARA O JOGO, ALÉM DE CHAMAR AS ESTRUTURAS DE CSS E JQUERY) pathrun.html 
+    </div>
+    
+    <div class="linkicones">
+    <a class='icone' style='display:none;' target='_blank' href='0'><img height='100%' width='100%' src='../../../icons/itchio.png'></img>play</a>
+    <a class='icone' style='display:none;' target='_blank' href='0'><img height='100%' width='100%' src='../../../icons/github.png'></img>git</a>
+    <a class='icone' style='display:block;' target='_blank' href='https://youtu.be/Wpwb2zBERhI'><img height='100%' width='100%' src='../../../icons/youtube.png'></img>stream</a>
+    <a class='icone' style='display:none;' target='_blank' href='0'><img height='100%' width='100%' src='../../../icons/globalgamejam.png'></img>jam</a>
+    <a class='icone' style='display:none;' target='_blank' href='0'><img height='100%' width='100%' src='../../../icons/documento.png'></img>manual</a>
+    <a class='icone' style='display:none;' target='_blank' href='0'><img height='100%' width='100%' src='../../../icons/assetshop.png'></img>baixar</a>
+    </div>
+    
