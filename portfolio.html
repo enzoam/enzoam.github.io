@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Gene-Z Games - Portfólio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/funcoespagina.js"></script>
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -29,28 +31,8 @@
   <!-- Projetos -->
   <section id="projetos">
     <h2>Meus Projetos</h2>
-    <div class="grid">
-      <!-- Exemplos adaptados do seu catálogo CODE -->
-      <div class="card">
-        <h3>CODE 486 – Super Daisy Jay</h3>
-        <p>Plataforma clássico com estética retrô</p>
-        <a href="https://youtube.com">Ver Vídeo</a>
-      </div>
-      <div class="card">
-        <h3>CODE 492 – StarMan</h3>
-        <p>Aventura espacial em pixel art</p>
-        <a href="https://youtube.com">Ver Vídeo</a>
-      </div>
-      <div class="card">
-        <h3>CODE 494 – CyberQuest</h3>
-        <p>RPG futurista com mecânicas modernas</p>
-        <a href="https://genezgames.itch.io">Jogar Demo</a>
-      </div>
-      <div class="card">
-        <h3>CODE 500 – VR Racer</h3>
-        <p>Corrida imersiva em realidade virtual</p>
-        <a href="https://genezgames.itch.io">Jogar Demo</a>
-      </div>
+    <div id="games-grid" class="grid">
+      <!-- Cards gerados dinamicamente -->
     </div>
   </section>
 
@@ -58,8 +40,8 @@
   <section id="eventos">
     <h2>Eventos & Participações</h2>
     <ul>
-      <li><a href="https://ldjam.com/users/genezgames">Ludum Dare</a> – protótipos criados em 48h</li>
-      <li><a href="https://globalgamejam.org/users/genezgames">Global Game Jam</a> – projetos colaborativos</li>
+      <li><a href="https://ldjam.com/users/genezgames">Ludum Dare</a></li>
+      <li><a href="https://globalgamejam.org/users/genezgames">Global Game Jam</a></li>
       <li>BGS Expo – participação em estande indie</li>
       <li>GGJam – eventos locais</li>
     </ul>
@@ -88,5 +70,31 @@
       <a href="mailto:seuemail@exemplo.com">E-mail</a>
     </p>
   </section>
+
+  <!-- Script dinâmico -->
+  <script>
+    function checkFile(i) {
+      const file_path = window.location.pathname.replace('portfolio.html','content/' + i + '/cover.png');
+      $.ajax({
+        url: file_path,
+        type: 'HEAD',
+        success: function () {
+          $('#games-grid').append(`
+            <div class="card">
+              <img src="content/${i}/cover.png?raw=true" alt="CODE ${i}" class="thumb">
+              <h3>CODE ${i}</h3>
+              <a href="#popup" onclick="function_carrega_popup_imgs(${i});">Ver Detalhes</a>
+            </div>
+          `);
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      for (let i = 500; i >= 0; i--) {
+        checkFile(i);
+      }
+    });
+  </script>
 </body>
 </html>
