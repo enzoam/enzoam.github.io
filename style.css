@@ -61,6 +61,8 @@ button {
 
 .card img.thumb {
   width: 100%;
+  height: 200px; /* altura fixa */
+  object-fit: cover; /* mantém proporção cortando se necessário */
   border-radius: 5px;
 }
 
