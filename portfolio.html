@@ -86,6 +86,15 @@
               <a href="#popup" onclick="function_carrega_popup_imgs(${i});">Ver Detalhes</a>
             </div>
           `);
+        },
+        error: function () {
+          $('#games-grid').append(`
+            <div class="card">
+              <img src="img/placeholder.png" alt="CODE ${i}" class="thumb">
+              <h3>CODE ${i}</h3>
+              <a href="#popup" onclick="function_carrega_popup_imgs(${i});">Ver Detalhes</a>
+            </div>
+          `);
         }
       });
     }
