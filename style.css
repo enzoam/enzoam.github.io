@@ -42,17 +42,52 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.grid {
+#games-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .card {
   background-color: #222;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
+  text-align: center;
+}
+
+.card img.thumb {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #8A2BE2;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  color: #FF0040;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  color: #888;
 }
