@@ -41,15 +41,25 @@
 
     <script>
       function checkFile(i) {
-        file_path = window.location.pathname.replace('index_new.html','content/' + i + '/cover.png');
+        const file_path = window.location.pathname.replace('index_new.html','content/' + i + '/cover.png');
         $.ajax({
             url: file_path,
             type: 'HEAD',
             success: function () {
-              $('auto').append('<a href="#popup" onclick="function_carrega_popup_imgs(' + i + ');" id="loadpopup"><img alt="" src="content/' + i + '/cover.png?raw=true"><br><br> CODE ' + i + '</a>');
+              // Encontrou a capa; tentar obter meta.json para nome oficial
+              fetch('content/' + i + '/meta.json').then(r=>{
+                  if(!r.ok) throw 0;
+                  return r.json();
+              }).then(meta=>{
+                  const title = meta.title || meta.name || ('Game ' + i);
+                  $('auto').append('<a href="#popup" onclick="function_carrega_popup_imgs(' + i + ');" id="loadpopup"><img alt="" src="content/' + i + '/cover.png?raw=true"><br><br> ' + $('<div>').text(title).html() + '</a>');
+              }).catch(()=>{
+                  // fallback para mostrar ID caso não exista meta.json
+                  $('auto').append('<a href="#popup" onclick="function_carrega_popup_imgs(' + i + ');" id="loadpopup"><img alt="" src="content/' + i + '/cover.png?raw=true"><br><br> CODE ' + i + '</a>');
+              });
             },
             error: function () {
-              $('auto').append('<a style="display:none;" href="#popup" onclick="function_carrega_popup_imgs(0);" id="loadpopup"><img alt="" src="content/0/cover.png?raw=true"><br><br> CODE 0</a>');
+              // não adiciona elemento visível quando não existe arquivo
             },
         })
       }
