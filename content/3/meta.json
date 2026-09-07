@@ -1,8 +1,8 @@
-{
-  "title": "Puzzle Island",
-  "description": "Quebre cabeças em ilhas misteriosas.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/puzzle-island" }
-  ],
-  "extra": "Versão demo disponível."
+﻿{
+    "title":  "Game 3",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 3. Adicione content/3/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }

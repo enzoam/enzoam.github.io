@@ -1,9 +1,8 @@
-{
-  "title": "Space Shooter",
-  "description": "Arcade shooter com upgrades e chefes espaciais.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/space-shooter" },
-    { "label": "Play Online", "url": "https://genezgames.example/space-shooter/play" }
-  ],
-  "extra": "Inclui trilha sonora original."
+﻿{
+    "title":  "Game 2",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 2. Adicione content/2/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }

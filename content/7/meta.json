@@ -1,8 +1,8 @@
-{
-  "title": "Castle Defender",
-  "description": "Defenda seu castelo contra ondas de inimigos.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/castle-defender" }
-  ],
-  "extra": "Modo desafio desbloqueado após completar campanha." 
+﻿{
+    "title":  "Game 7",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 7. Adicione content/7/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }

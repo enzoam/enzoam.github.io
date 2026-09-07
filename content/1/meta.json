@@ -1,9 +1,8 @@
-{
-  "title": "Adventure Quest",
-  "description": "A fast-paced adventure with puzzles and exploration.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/adventure-quest" },
-    { "label": "Download", "url": "https://genezgames.example/adventure-quest/download" }
-  ],
-  "extra": "Feito em 2025. Controles: WASD + Mouse."
+﻿{
+    "title":  "Game 1",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 1. Adicione content/1/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }

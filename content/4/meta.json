@@ -1,9 +1,8 @@
-{
-  "title": "Retro Racer",
-  "description": "Corrida com estética retrô e pistas desafiadoras.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/retro-racer" },
-    { "label": "Trailer", "url": "https://youtube.com/example" }
-  ],
-  "extra": "Multiplayer local suportado."
+﻿{
+    "title":  "Game 4",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 4. Adicione content/4/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }

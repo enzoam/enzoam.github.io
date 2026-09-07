@@ -1,8 +1,8 @@
-{
-  "title": "Mystic Tower",
-  "description": "Suba a torre cheia de enigmas e inimigos.",
-  "links": [
-    { "label": "Página do Jogo", "url": "https://genezgames.example/mystic-tower" }
-  ],
-  "extra": "Recebe atualizações frequentes." 
+﻿{
+    "title":  "Game 5",
+    "description":  "DescriÃ§Ã£o nÃ£o informada para 5. Adicione content/5/meta.json manualmente.",
+    "links":  [
+
+              ],
+    "extra":  ""
 }
