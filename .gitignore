@@ -1,0 +1,10 @@
+.vs/
+node_modules/
+.DS_Store
+*.log
+*.user
+*.suo
+*.tmp
+bin/
+obj/
+testEnvironments.json
