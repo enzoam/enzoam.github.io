@@ -40,6 +40,7 @@ function function_carrega_popup_imgs(game) {
         // área principal (preferir index.html se existir, senão slideshow)
         html += `<div id=\"popup-main-area\" style=\"flex:1;min-width:0;\"></div>`;
         // painel lateral com links/infos
+        /*
         html += `<div style=\"width:280px;background:#07101a;padding:12px;border-radius:8px;color:#cbd5e1;overflow:auto;\">`;
         if(meta.links && Array.isArray(meta.links)){
             html += '<h6 style="margin-top:0;color:#fff">Links</h6><ul style="padding-left:18px">';
@@ -51,6 +52,7 @@ function function_carrega_popup_imgs(game) {
             });
             html += '</ul>';
         }
+        */
         // link direto para página do projeto (index.html) - exibido se existir
         html += `<div style="margin-top:8px"><a id=\"popup-open-index\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#9fe3ff\">Abrir página do projeto</a></div>`;
         if(meta.extra){ html += `<div style="margin-top:8px">${meta.extra}</div>`; }
