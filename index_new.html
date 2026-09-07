@@ -51,7 +51,7 @@
                   if(!r.ok) throw 0;
                   return r.json();
               }).then(meta=>{
-                  const title = meta.title || meta.name || ('Game ' + i);
+                  const title = meta.description || meta.title || meta.name || ('Game ' + i);
                   $('auto').append('<a href="#popup" onclick="function_carrega_popup_imgs(' + i + ');" id="loadpopup"><img alt="" src="content/' + i + '/cover.png?raw=true"><br><br> ' + $('<div>').text(title).html() + '</a>');
               }).catch(()=>{
                   // fallback para mostrar ID caso não exista meta.json

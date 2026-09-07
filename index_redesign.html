@@ -102,14 +102,14 @@
 	  col.appendChild(card);
 	  cardsRow.appendChild(col);
 
-	  // tentar carregar meta.json -> title ou index.html title
-	  fetch(`content/${id}/meta.json`).then(r=>{
+	// tentar carregar meta.json -> usar description como nome, senão title, senão index.html title
+	fetch(`content/${id}/meta.json`).then(r=>{
 		if(!r.ok) throw 0;
 		return r.json();
-	  }).then(j=>{
-		const name = j.title || j.name || j.nome || j.project || null;
+	}).then(j=>{
+		const name = j.description || j.title || j.name || j.nome || j.project || null;
 		if(name){ titleEl.textContent = name; col.setAttribute('data-title', name); }
-	  }).catch(()=>{
+	}).catch(()=>{
 		// tentar index.html
 		fetch(`content/${id}/index.html`).then(r=>{
 		  if(!r.ok) throw 0;
