@@ -71,6 +71,9 @@
       <div class="location" id="home">
         <h1>Game List</h1>
         <div>
+        <div style="margin-bottom:12px;">
+          <input id="searchInputNew" type="search" placeholder="Buscar jogos..." style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc;" oninput="filterNewCards()">
+        </div>
         <auto class="box">
         <script>
             var file_path;
@@ -83,6 +86,24 @@
 
         </script>
         </auto>
+        <script>
+          function normalizeStringNew(str){
+            if(!str) return '';
+            try{ return str.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^\w\s]/g,' ').trim().toLowerCase(); }
+            catch(e){ return str.replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,' ').trim().toLowerCase(); }
+          }
+
+          function filterNewCards(){
+            const qRaw = document.getElementById('searchInputNew').value.trim();
+            const q = normalizeStringNew(qRaw);
+            const anchors = document.querySelectorAll('auto.box a');
+            anchors.forEach(a=>{
+              const txt = normalizeStringNew(a.textContent || a.innerText || '');
+              if(!q || txt.indexOf(q) !== -1) a.style.display = '';
+              else a.style.display = 'none';
+            });
+          }
+        </script>
         </div>
     </div>
   
