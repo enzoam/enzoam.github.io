@@ -171,16 +171,28 @@
 
 <script>
 function filterCards(){
-  const q = document.getElementById('searchInput').value.trim().toLowerCase();
-  const cards = document.querySelectorAll('#cardsRow > .col-6');
-  cards.forEach(c => {
-	const title = (c.getAttribute('data-title')||'').toLowerCase();
-	if(!q || title.indexOf(q) !== -1){
-	  c.style.display = '';
-	} else {
-	  c.style.display = 'none';
+	const qRaw = document.getElementById('searchInput').value.trim();
+	const q = normalizeString(qRaw);
+	const cards = document.querySelectorAll('#cardsRow > .col-6');
+	cards.forEach(c => {
+		const title = normalizeString(c.getAttribute('data-title')||'');
+		if(!q || title.indexOf(q) !== -1){
+			c.style.display = '';
+		} else {
+			c.style.display = 'none';
+		}
+	});
+}
+
+function normalizeString(str){
+	if(!str) return '';
+	// remove diacritics, punctuation and lowercase
+	try{
+		return str.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[\W_]+/g,' ').trim().toLowerCase();
+	} catch(e){
+		// fallback for older browsers
+		return str.replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,' ').trim().toLowerCase();
 	}
-  });
 }
 </script>
 
