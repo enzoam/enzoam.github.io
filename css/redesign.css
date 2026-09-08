@@ -98,3 +98,6 @@ main, .wrapper, .container{ position: relative; z-index: 1; }
 
 /* If custom popup exists (id=popup) keep it below modal */
 #popup{ z-index: 2100; }
+
+/* When a modal is open, hide or dim the scanlines overlay so modal stays bright */
+body.hide-scanlines::before{ opacity: 0 !important; mix-blend-mode: normal !important; }

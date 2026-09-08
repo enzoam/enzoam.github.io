@@ -54,6 +54,19 @@
   </div>
 
   <script>
+// when preview modal opens, hide the scanlines overlay so modal remains bright
+document.addEventListener('DOMContentLoaded', ()=>{
+	const previewModalEl = document.getElementById('previewModal');
+	if(previewModalEl){
+		previewModalEl.addEventListener('show.bs.modal', ()=>{
+			document.body.classList.add('hide-scanlines');
+		});
+		previewModalEl.addEventListener('hidden.bs.modal', ()=>{
+			document.body.classList.remove('hide-scanlines');
+		});
+	}
+});
+
 	const MAX_INDEX = 500; // ajuste conforme seu acervo
 	const cardsRow = document.getElementById('cardsRow');
 
