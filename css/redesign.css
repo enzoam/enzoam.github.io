@@ -91,3 +91,10 @@ body::before{
 
 /* Ensure main content stacks above overlay */
 main, .wrapper, .container{ position: relative; z-index: 1; }
+
+/* Ensure Bootstrap modal appears above overlays and custom popups */
+.modal-backdrop{ z-index: 2999 !important; }
+.modal{ z-index: 3000 !important; }
+
+/* If custom popup exists (id=popup) keep it below modal */
+#popup{ z-index: 2100; }
