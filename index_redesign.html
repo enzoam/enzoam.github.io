@@ -198,5 +198,33 @@ function normalizeString(str){
 }
 </script>
 
+<script>
+// Fallback handlers to ensure modal can be closed by clicking X or backdrop
+document.addEventListener('click', function(e){
+	try{
+		// close buttons inside modal (btn-close or data-bs-dismiss)
+		if(e.target.closest && (e.target.matches('.btn-close') || e.target.closest('[data-bs-dismiss="modal"]'))){
+			const modalEl = document.getElementById('previewModal');
+			if(modalEl){
+				const inst = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+				inst.hide();
+			}
+		}
+
+		// clicking on backdrop element
+		if(e.target && e.target.classList && e.target.classList.contains('modal-backdrop')){
+			// hide all visible bootstrap modals
+			document.querySelectorAll('.modal.show').forEach(m=>{
+				const inst = bootstrap.Modal.getInstance(m) || new bootstrap.Modal(m);
+				inst.hide();
+			});
+		}
+	} catch(err){
+		// swallow errors to avoid breaking page
+		console.warn('Modal fallback handler error', err);
+	}
+});
+</script>
+
 </body>
 </html>
