@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated procedural texture: subtle paper + grain + vignette for retro catalog look -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="none">
+  <defs>
+	<!-- subtle paper grain -->
+	<filter id="grain">
+	  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise" />
+	  <feColorMatrix type="saturate" values="0" />
+	  <feComponentTransfer>
+		<feFuncA type="table" tableValues="0 0.06" />
+	  </feComponentTransfer>
+	  <feBlend mode="overlay" in2="SourceGraphic" />
+	</filter>
+
+	<!-- vignette -->
+	<radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+	  <stop offset="0%" stop-color="rgba(0,0,0,0)" />
+	  <stop offset="100%" stop-color="rgba(0,0,0,0.45)" />
+	</radialGradient>
+
+	<!-- faint paper lines (horizontal) -->
+	<pattern id="lines" width="4" height="4" patternUnits="userSpaceOnUse">
+	  <rect width="4" height="4" fill="none" />
+	  <rect width="4" height="1" fill="rgba(255,255,255,0.02)" />
+	</pattern>
+  </defs>
+
+  <!-- base color (very dark) -->
+  <rect width="100%" height="100%" fill="#071021" />
+
+  <!-- subtle halftone dots (as decoration) -->
+  <g opacity="0.06">
+	<circle cx="120" cy="100" r="60" fill="#ffd93d" />
+	<circle cx="420" cy="240" r="80" fill="#6bf0ff" />
+	<circle cx="980" cy="640" r="120" fill="#ff6b6b" />
+  </g>
+
+  <!-- paper lines -->
+  <rect width="100%" height="100%" fill="url(#lines)" />
+
+  <!-- grain overlay using filter -->
+  <rect width="100%" height="100%" fill="transparent" filter="url(#grain)" />
+
+  <!-- vignette on top -->
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+</svg>
