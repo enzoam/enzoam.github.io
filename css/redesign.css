@@ -13,8 +13,8 @@ body{
 	radial-gradient(circle at 10% 10%, rgba(255,107,107,0.03) 0%, transparent 15%),
 	radial-gradient(circle at 90% 90%, rgba(107,240,255,0.02) 0%, transparent 18%),
 	linear-gradient(180deg,var(--bg1),var(--bg2)),
-	/* subtle vintage texture (SVG file in assets/) */
-	url('assets/texture.svg'),
+	/* subtle vintage texture (SVG file in assets/) - path relative to this CSS file */
+	url('../assets/texture.svg'),
 	/* richer tiled pixel SVG (higher opacity, larger cells) */
 	url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><rect width='16' height='16' fill='none'/><rect x='0' y='0' width='4' height='4' fill='%23ffd93d' opacity='0.12'/><rect x='8' y='8' width='4' height='4' fill='%236bf0ff' opacity='0.08'/><rect x='12' y='2' width='2' height='2' fill='%23ff6b6b' opacity='0.06'/><rect x='2' y='12' width='2' height='2' fill='%23ffd93d' opacity='0.06'/></svg>");
   color: #eef6ff;
