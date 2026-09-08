@@ -101,3 +101,26 @@ main, .wrapper, .container{ position: relative; z-index: 1; }
 
 /* When a modal is open, hide or dim the scanlines overlay so modal stays bright */
 body.hide-scanlines::before{ opacity: 0 !important; mix-blend-mode: normal !important; }
+
+/* Custom popup backdrop and styling to match modal */
+.popup-backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 2050;
+}
+
+/* Make custom popup visually match modal-content */
+#popup{
+  background: linear-gradient(180deg, rgba(0,0,0,0.92), rgba(10,10,20,0.98));
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+#popup a[onclick], #popup .popup-close{
+  color: #fff;
+}
+
+/* make popup content area scroll nicely */
+#popupcontent{ overflow:auto; padding:12px; }

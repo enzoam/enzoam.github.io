@@ -4,6 +4,19 @@ function function_carrega_popup_imgs(game) {
     const popup = document.getElementById("popup");
     const popupcontent = document.getElementById("popupcontent");
     if(!popup || !popupcontent) return;
+
+    // create / show backdrop behind the popup (darker, modal-like)
+    if(!document.getElementById('popup-backdrop')){
+        const backdrop = document.createElement('div');
+        backdrop.id = 'popup-backdrop';
+        backdrop.className = 'popup-backdrop';
+        backdrop.addEventListener('click', function_close_popup);
+        document.body.appendChild(backdrop);
+        popup._backdrop = backdrop;
+    }
+    // prevent background scroll while popup open
+    document.body.style.overflow = 'hidden';
+
     popup.style.display = "block";
 
     // adiciona handler para ESC para fechar o popup
@@ -102,6 +115,10 @@ function function_close_popup() {
         if(popupcontent) popupcontent.innerHTML = '';
         // remover esc handler se existe
         if(popup._escHandler){ document.removeEventListener('keydown', popup._escHandler); delete popup._escHandler; }
+        // remove backdrop if present
+        if(popup._backdrop){ try{ popup._backdrop.remove(); }catch(e){} delete popup._backdrop; }
+        // restore body scroll
+        try{ document.body.style.overflow = ''; }catch(e){}
     }
 }
 
