@@ -142,3 +142,13 @@ body.hide-scanlines::before{ opacity: 0 !important; mix-blend-mode: normal !impo
 
 /* make popup content area scroll nicely */
 #popupcontent{ overflow:auto; padding:12px; }
+
+/* Reduce button size in cards to fit pixel font */
+.card .btn, .card .btn-sm {
+  font-size: 10px;
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+/* Slightly smaller input and search control to match retro look */
+.form-control, .form-control-sm { font-size: 11px; }
