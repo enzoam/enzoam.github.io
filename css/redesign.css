@@ -22,6 +22,11 @@ body{
   min-height:100vh;
 }
 
+/* Ensure UI controls and components use the same retro font */
+html, body, input, button, select, textarea, .btn, .form-control, .navbar, .card, .modal-content, #popup, footer {
+  font-family: 'Press Start 2P', monospace;
+}
+
 /* Retro site header */
 .retro-title{
   font-family: 'Press Start 2P', monospace;
